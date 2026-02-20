@@ -1,6 +1,0 @@
-[build]
-builder = "go"
-buildCommand = "go build -o bin/server ./cmd/server"
-
-[deploy]
-startCommand = "./bin/server"
