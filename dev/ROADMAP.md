@@ -76,16 +76,16 @@
 
 ---
 
-## Phase 5: Test Data & Demo (10 min) ⬜ [10 pts]
+## Phase 5: Test Data & Demo (10 min) ✅ [10 pts]
 > Datos de prueba y demostración
 
-- [ ] 5.1 Crear procesadores mock (5 procesadores)
-- [ ] 5.2 Generar 1000+ transacciones con patrones:
+- [x] 5.1 Crear procesadores mock (5 procesadores)
+- [x] 5.2 Generar 1000+ transacciones con patrones:
   - Normal: 70-80% auth rate
   - Outage: processor_a con 90% errores por 2 horas
   - Degradación: processor_b bajando gradualmente
-- [ ] 5.3 Crear script de demo (demo.sh o demo.go)
-- [ ] 5.4 Probar escenario completo de failover
+- [x] 5.3 Crear script de demo (demo.sh o demo.go)
+- [x] 5.4 Probar escenario completo de failover
 
 ---
 
@@ -109,9 +109,9 @@
 | 2. Health | 11 | 11 | ✅ 100% |
 | 3. Routing | 10 | 10 | ✅ 100% |
 | 4. API | 7 | 7 | ✅ 100% |
-| 5. Data | 4 | 0 | ⬜ 0% |
+| 5. Data | 4 | 4 | ✅ 100% |
 | 6. Docs | 2 | 0 | ⬜ 0% |
-| **Total** | **37** | **31** | **84%** |
+| **Total** | **37** | **35** | **95%** |
 
 ---
 
@@ -119,7 +119,7 @@
 
 - [x] ⚠️ CHECKPOINT 1: Core Logic funciona (Phase 2+3) → 50 pts secured
 - [x] ⚠️ CHECKPOINT 2: API funciona (Phase 4) → 65 pts secured
-- [ ] ⚠️ CHECKPOINT 3: Demo funciona (Phase 5) → 75 pts secured
+- [x] ⚠️ CHECKPOINT 3: Demo funciona (Phase 5) → 75 pts secured
 - [ ] ⚠️ CHECKPOINT 4: Documentación (Phase 6) → 80+ pts secured
 
 ---
