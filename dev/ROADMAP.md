@@ -63,16 +63,16 @@
 
 ---
 
-## Phase 4: API REST (10 min) ⬜ [15 pts]
+## Phase 4: API REST (10 min) ✅ [15 pts]
 > Endpoints HTTP
 
-- [ ] 4.1 Crear Handler struct con dependencias
-- [ ] 4.2 POST /api/v1/transactions - Registrar transacción
-- [ ] 4.3 GET /api/v1/health - Estado de todos los procesadores
-- [ ] 4.4 GET /api/v1/health/{processorId} - Estado + histórico
-- [ ] 4.5 POST /api/v1/routing/recommend - Obtener recomendación
-- [ ] 4.6 GET /api/v1/alerts - Transiciones de estado
-- [ ] 4.7 Crear main.go con server setup
+- [x] 4.1 Crear Handler struct con dependencias
+- [x] 4.2 POST /api/v1/transactions - Registrar transacción
+- [x] 4.3 GET /api/v1/health - Estado de todos los procesadores
+- [x] 4.4 GET /api/v1/health/{processorId} - Estado + histórico
+- [x] 4.5 POST /api/v1/routing/recommend - Obtener recomendación
+- [x] 4.6 GET /api/v1/alerts - Transiciones de estado
+- [x] 4.7 Crear main.go con server setup
 
 ---
 
@@ -108,17 +108,17 @@
 | 1. Setup | 3 | 3 | ✅ 100% |
 | 2. Health | 11 | 11 | ✅ 100% |
 | 3. Routing | 10 | 10 | ✅ 100% |
-| 4. API | 7 | 0 | ⬜ 0% |
+| 4. API | 7 | 7 | ✅ 100% |
 | 5. Data | 4 | 0 | ⬜ 0% |
 | 6. Docs | 2 | 0 | ⬜ 0% |
-| **Total** | **37** | **24** | **65%** |
+| **Total** | **37** | **31** | **84%** |
 
 ---
 
 ## Checkpoints
 
 - [x] ⚠️ CHECKPOINT 1: Core Logic funciona (Phase 2+3) → 50 pts secured
-- [ ] ⚠️ CHECKPOINT 2: API funciona (Phase 4) → 65 pts secured
+- [x] ⚠️ CHECKPOINT 2: API funciona (Phase 4) → 65 pts secured
 - [ ] ⚠️ CHECKPOINT 3: Demo funciona (Phase 5) → 75 pts secured
 - [ ] ⚠️ CHECKPOINT 4: Documentación (Phase 6) → 80+ pts secured
 
