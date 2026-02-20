@@ -6,12 +6,12 @@
 
 ---
 
-## Phase 1: Setup & Domain (5 min) ⬜
+## Phase 1: Setup & Domain (5 min) ✅
 > Estructura del proyecto y modelos de dominio
 
-- [ ] 1.1 Inicializar proyecto Go (go.mod)
-- [ ] 1.2 Crear estructura de carpetas (cmd/, internal/)
-- [ ] 1.3 Definir domain models:
+- [x] 1.1 Inicializar proyecto Go (go.mod)
+- [x] 1.2 Crear estructura de carpetas (cmd/, internal/)
+- [x] 1.3 Definir domain models:
   - Transaction (id, processor_id, result, payment_method, country, amount, timestamp)
   - Processor (id, name, countries, payment_methods)
   - ProcessorHealth (processor_id, status, auth_rate, counts, last_updated)
@@ -105,13 +105,13 @@
 
 | Phase | Tasks | Done | Progress |
 |-------|-------|------|----------|
-| 1. Setup | 3 | 0 | ⬜ 0% |
+| 1. Setup | 3 | 3 | ✅ 100% |
 | 2. Health | 11 | 0 | ⬜ 0% |
 | 3. Routing | 10 | 0 | ⬜ 0% |
 | 4. API | 7 | 0 | ⬜ 0% |
 | 5. Data | 4 | 0 | ⬜ 0% |
 | 6. Docs | 2 | 0 | ⬜ 0% |
-| **Total** | **37** | **0** | **0%** |
+| **Total** | **37** | **3** | **8%** |
 
 ---
 
