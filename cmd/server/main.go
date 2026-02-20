@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/yuno/techcart-failover/internal/api"
 	"github.com/yuno/techcart-failover/internal/domain"
@@ -28,8 +29,12 @@ func main() {
 	// Add CORS middleware for testing
 	corsHandler := corsMiddleware(mux)
 
-	// Start server
-	addr := ":8080"
+	// Start server (use PORT env var for Railway/cloud deployment)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	addr := ":" + port
 	log.Printf("🚀 TechCart Failover API starting on %s", addr)
 	log.Printf("📊 Registered %d processors", len(router.GetProcessors()))
 	log.Println("")
