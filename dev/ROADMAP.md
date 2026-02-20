@@ -20,27 +20,27 @@
 
 ---
 
-## Phase 2: Core - Health Calculator (15 min) ⬜ [25 pts]
+## Phase 2: Core - Health Calculator (15 min) ✅ [25 pts]
 > Lógica de monitoreo de salud - TDD
 
 ### 2.1 Tests RED
-- [ ] 2.1.1 Test: Procesador nuevo → HEALTHY por defecto
-- [ ] 2.1.2 Test: 80% approved → HEALTHY
-- [ ] 2.1.3 Test: 50% approved → DEGRADED
-- [ ] 2.1.4 Test: 20% approved → DOWN
-- [ ] 2.1.5 Test: >50% errores → DOWN
-- [ ] 2.1.6 Test: Rolling window respeta límite de 50
+- [x] 2.1.1 Test: Procesador nuevo → HEALTHY por defecto
+- [x] 2.1.2 Test: 80% approved → HEALTHY
+- [x] 2.1.3 Test: 50% approved → DEGRADED
+- [x] 2.1.4 Test: 20% approved → DOWN
+- [x] 2.1.5 Test: >50% errores → DOWN
+- [x] 2.1.6 Test: Rolling window respeta límite de 50
 
 ### 2.2 Implementation GREEN
-- [ ] 2.2.1 Implementar Calculator struct con storage
-- [ ] 2.2.2 Implementar RecordTransaction()
-- [ ] 2.2.3 Implementar calculateHealth() con rolling window
-- [ ] 2.2.4 Implementar determineStatus() con thresholds
-- [ ] 2.2.5 Implementar GetHealth() y GetAllHealth()
+- [x] 2.2.1 Implementar Calculator struct con storage
+- [x] 2.2.2 Implementar RecordTransaction()
+- [x] 2.2.3 Implementar calculateHealth() con rolling window
+- [x] 2.2.4 Implementar determineStatus() con thresholds
+- [x] 2.2.5 Implementar GetHealth() y GetAllHealth()
 
 ### 2.3 Refactor
-- [ ] 2.3.1 Extraer constantes (thresholds, window size)
-- [ ] 2.3.2 Agregar mutex para concurrencia
+- [x] 2.3.1 Extraer constantes (thresholds, window size)
+- [x] 2.3.2 Agregar mutex para concurrencia
 
 ---
 
@@ -106,12 +106,12 @@
 | Phase | Tasks | Done | Progress |
 |-------|-------|------|----------|
 | 1. Setup | 3 | 3 | ✅ 100% |
-| 2. Health | 11 | 0 | ⬜ 0% |
+| 2. Health | 11 | 11 | ✅ 100% |
 | 3. Routing | 10 | 0 | ⬜ 0% |
 | 4. API | 7 | 0 | ⬜ 0% |
 | 5. Data | 4 | 0 | ⬜ 0% |
 | 6. Docs | 2 | 0 | ⬜ 0% |
-| **Total** | **37** | **3** | **8%** |
+| **Total** | **37** | **14** | **38%** |
 
 ---
 
