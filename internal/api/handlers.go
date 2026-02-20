@@ -50,6 +50,9 @@ type ErrorResponse struct {
 
 // RegisterRoutes registers all API routes
 func (h *Handler) RegisterRoutes(mux *http.ServeMux) {
+	// Root endpoint
+	mux.HandleFunc("GET /", h.Home)
+
 	// Transaction recording
 	mux.HandleFunc("POST /api/v1/transactions", h.RecordTransaction)
 
@@ -66,6 +69,23 @@ func (h *Handler) RegisterRoutes(mux *http.ServeMux) {
 
 	// Alerts
 	mux.HandleFunc("GET /api/v1/alerts", h.GetAlerts)
+}
+
+// GET / - Home page with API info
+func (h *Handler) Home(w http.ResponseWriter, r *http.Request) {
+	h.writeJSON(w, map[string]interface{}{
+		"name":    "TechCart Failover Intelligence API",
+		"version": "1.0.0",
+		"endpoints": map[string]string{
+			"processors":     "GET /api/v1/processors",
+			"health":         "GET /api/v1/health",
+			"health_detail":  "GET /api/v1/health/{processorId}",
+			"routing":        "GET /api/v1/routing/recommend?payment_method=PIX&country=BR",
+			"transactions":   "POST /api/v1/transactions",
+			"alerts":         "GET /api/v1/alerts",
+		},
+		"docs": "https://github.com/nicpenaloza/yuno-challenge-techcart",
+	}, http.StatusOK)
 }
 
 // POST /api/v1/transactions - Record a transaction result
