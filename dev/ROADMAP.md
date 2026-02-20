@@ -44,22 +44,22 @@
 
 ---
 
-## Phase 3: Core - Routing Engine (10 min) ⬜ [25 pts]
+## Phase 3: Core - Routing Engine (10 min) ✅ [25 pts]
 > Lógica de routing inteligente - TDD
 
 ### 3.1 Tests RED
-- [ ] 3.1.1 Test: Recomendar procesador HEALTHY sobre DOWN
-- [ ] 3.1.2 Test: Rankear por authorization_rate
-- [ ] 3.1.3 Test: Filtrar por payment_method
-- [ ] 3.1.4 Test: Filtrar por country
-- [ ] 3.1.5 Test: Todos DOWN → lista vacía o warning
+- [x] 3.1.1 Test: Recomendar procesador HEALTHY sobre DOWN
+- [x] 3.1.2 Test: Rankear por authorization_rate
+- [x] 3.1.3 Test: Filtrar por payment_method
+- [x] 3.1.4 Test: Filtrar por country
+- [x] 3.1.5 Test: Todos DOWN → lista vacía o warning
 
 ### 3.2 Implementation GREEN
-- [ ] 3.2.1 Implementar Engine struct
-- [ ] 3.2.2 Implementar RegisterProcessor()
-- [ ] 3.2.3 Implementar findCandidates() - filtro por method/country
-- [ ] 3.2.4 Implementar rankProcessors() - score por health
-- [ ] 3.2.5 Implementar Recommend() - orquestador
+- [x] 3.2.1 Implementar Engine struct
+- [x] 3.2.2 Implementar RegisterProcessor()
+- [x] 3.2.3 Implementar findCandidates() - filtro por method/country
+- [x] 3.2.4 Implementar rankProcessors() - score por health
+- [x] 3.2.5 Implementar Recommend() - orquestador
 
 ---
 
@@ -107,17 +107,17 @@
 |-------|-------|------|----------|
 | 1. Setup | 3 | 3 | ✅ 100% |
 | 2. Health | 11 | 11 | ✅ 100% |
-| 3. Routing | 10 | 0 | ⬜ 0% |
+| 3. Routing | 10 | 10 | ✅ 100% |
 | 4. API | 7 | 0 | ⬜ 0% |
 | 5. Data | 4 | 0 | ⬜ 0% |
 | 6. Docs | 2 | 0 | ⬜ 0% |
-| **Total** | **37** | **14** | **38%** |
+| **Total** | **37** | **24** | **65%** |
 
 ---
 
 ## Checkpoints
 
-- [ ] ⚠️ CHECKPOINT 1: Core Logic funciona (Phase 2+3) → 50 pts secured
+- [x] ⚠️ CHECKPOINT 1: Core Logic funciona (Phase 2+3) → 50 pts secured
 - [ ] ⚠️ CHECKPOINT 2: API funciona (Phase 4) → 65 pts secured
 - [ ] ⚠️ CHECKPOINT 3: Demo funciona (Phase 5) → 75 pts secured
 - [ ] ⚠️ CHECKPOINT 4: Documentación (Phase 6) → 80+ pts secured
