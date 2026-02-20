@@ -1,0 +1,16 @@
+Core Functionality: Health monitoring accurately tracks processor performance and calculates status based on recent transaction results
+25pts
+Core Functionality: Routing logic makes intelligent decisions, prioritizing healthy processors and avoiding failed ones
+25pts
+API Design: Endpoints are well-structured, intuitive, and properly documented with clear request/response examples
+15pts
+Algorithm Quality: Health calculation and routing logic are thoughtful, clearly explained, and handle edge cases appropriately
+15pts
+Test Data & Demo: Includes realistic data with outage scenarios, and provides clear instructions for demonstrating the system in action
+10pts
+Code Quality: Code is clean, well-organized, and includes helpful comments explaining key logic
+5pts
+Documentation: README is comprehensive, setup is straightforward, and design decisions are clearly explained
+5pts
+Total
+100pts

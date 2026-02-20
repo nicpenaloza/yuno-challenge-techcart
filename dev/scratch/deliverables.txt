@@ -1,0 +1,10 @@
+-
+Working backend service with API endpoints for submitting transaction results, querying processor health, and getting routing recommendations
+-
+Test data (generated or scripted) demonstrating normal processor behavior, an outage scenario, and degraded performance
+-
+README with setup instructions, API documentation, explanation of health/routing algorithms, and demo instructions
+-
+Brief written explanation (in README or separate doc) of your design decisions: how you calculate health, how you make routing decisions, and what trade-offs you considered
+-
+(Optional) Example API requests/responses or a simple script that demonstrates the system working end-to-end
